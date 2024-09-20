@@ -18,9 +18,12 @@ Draw_circle((0, 0), 10, 'red')
 Draw_circle((0, 0), 3, 'black') #The radius of the circle to be found can be assigned any value(3)
 
 #Finding values close to the actual circle radius based on random values and calculating the average.
+
+
+epoch = 100
 h = 100
 h2 = 0
-for i in range(1000):
+for i in range(epoch):
     x = rand()
     y = rand()
     plt.plot(x, y, marker='o', markersize=5, color='blue') 
@@ -33,6 +36,7 @@ for i in range(1000):
         if hypotenuse > h2:
             h2 = hypotenuse
 
+print(f"epoch: {epoch}")
 print(f"The nearest distance from outside the circle: {h:.5f}")
 print(f"The nearest distance from inside the circle: {h2:.5f}")
 print(f"Output value: {(h+h2)/2:.5f}")
