@@ -22,8 +22,8 @@ time.sleep(10)
 
 print("siteye giriliyor")
 
-username = driver.find_element(By.NAME, 'username').send_keys('oto_bot02') 
-password = driver.find_element(By.NAME, 'password').send_keys('OTOBOT3131')
+username = driver.find_element(By.NAME, 'username').send_keys('username') 
+password = driver.find_element(By.NAME, 'password').send_keys('password')
 girisbutton = driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[3]/button').click() #Log-in button
 
 time.sleep(10)
