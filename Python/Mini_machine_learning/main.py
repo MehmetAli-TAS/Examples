@@ -20,7 +20,7 @@ Draw_circle((0, 0), 3, 'black') #The radius of the circle to be found can be ass
 #Finding values close to the actual circle radius based on random values and calculating the average.
 
 
-epoch = 100
+epoch = 0
 h = 100
 h2 = 0
 for i in range(epoch):
